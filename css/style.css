@@ -1,0 +1,159 @@
+@media print {
+    .tm-sidebar, .boxes, .heading, .blocks, .carousel, .img-fluid, .contact-form {
+        display: none;
+    }
+    #contact {
+        display: none;
+    }
+    .tm-banner-inner {
+        padding: 45px 0;
+   }
+    .tm-banner-text {
+        padding-top: 15px;
+    }
+    p::first-letter {
+        color: #87CEFA;
+    }
+    h2.tm-section-title {
+        color: #2e09ff;
+    }
+    .flex-2-col {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    img[alt=epam-mexico] { 
+        width: 200px;
+        height: auto;
+    }
+    .flex-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 500px;
+    }
+    .tm-content-box {
+        margin-bottom: 0px;
+    }
+    .tm-section-title ~.tm-section-description:nth-child(2) {
+        font-style: italic;
+    }
+}
+@media not print {
+section::before {
+    content: '';
+    border-top: 40px solid #87CEFA;
+    border-right: 180px solid transparent;
+}
+nav {
+  box-shadow: 0 5px 4px 0 rgba(0,0,0,.2);
+}
+.tm-content-box {
+    box-shadow: 0px 0px 5px 5px rgb(0 0 0 / 20%);
+}
+.tm-banner-inner {
+    background-color: white;
+}
+.tm-banner {
+    background-color: #f3f3f3;
+}
+.tm-box-bg-title:hover {
+    background-color: #87CEFA;
+    color: #ffffff;
+    cursor: pointer;
+}
+p::first-letter {
+    color: #87CEFA;
+}
+ul p::first-letter {
+    color: #000000;
+}
+ul p, .text-xs-center {
+    font-size: 16px;
+}
+.submit-btn {
+    display: block;
+    margin-left: auto;
+    color: #96cefa;
+    background-color: #ffffff;
+    border-color: #96cefa;
+    border-radius: 0%;
+    padding: 6px 25px 6px 25px;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #96cefa;
+    border-color: #96cefa;
+}
+.mandatory-field:after {
+    left: auto;
+    right: 5px;
+    color: red;
+    content: '*';
+    font-weight: bold;
+  }
+.tm-team-description-container {
+    max-width: none;
+    background: #fff;
+    box-shadow: 0px 0px 5px 5px rgb(0 0 0 / 20%);
+}
+.tm-content-box > .padding-medium:nth-child(1) {
+    box-shadow: none;
+}
+.blocks > .flex-2-col:nth-child(2) {
+    box-shadow: none;
+}
+.box-work:nth-child(even) {
+    background-color: #f0f0f0;
+}
+h2 ~p:nth-child(2n) {
+    font-style: italic;
+}
+p{
+    font-size: 30px;
+}
+.carousel-content .tm-section-title {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+.tm-section-description {
+    text-indent: 1.5em;
+    text-align: left;
+    line-height: 2;
+}
+.text::after {
+    content: "New";
+    position: absolute;
+    color: #ff0000;
+    font-size: 10px;
+}
+a {
+    color: rgb(0, 0, 0);
+}
+a:hover {
+    color: #2e09ff;
+    }
+.padding-medium a:visited {
+    text-decoration: underline;
+}
+.padding-medium li:hover {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+.box-work {
+    padding: 10px 10px 10px 10px;
+}
+.box-work p:first-letter {
+    font-weight: 400;
+}
+.tm-main-nav li:hover {
+    background-color: #e7e7e7;
+    }
+.flex-2-col:first-child {
+    display: flex;
+    align-items: center;
+    }
+.tm-content-box .padding-medium .tm-section-description {
+    font-size: 16px;
+}
+}
